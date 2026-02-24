@@ -1,48 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Apple-Style Reveal on Scroll
-    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    // 1. Scroll-Triggered Reveal (Apple/Airbnb feel)
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -80px 0px'
+    };
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    document.querySelectorAll('.insight-card, .solution-item, .hero-wrap, .trust-bar').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+    // Apply to main sections and cards
+    document.querySelectorAll('.insight-card, .hero-wrap, .trust-bar, .solution-item, section').forEach(el => {
+        el.classList.add('reveal-init');
         observer.observe(el);
     });
 
-    // 2. Lead Form Handling
-    const form = document.getElementById('lead-form');
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const submitBtn = form.querySelector('button');
-            submitBtn.innerText = "Processing Lead...";
-            submitBtn.disabled = true;
+    // 2. Add dynamic CSS for transitions
+    const style = document.createElement('style');
+    style.textContent = `
+        .reveal-init {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-init.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    `;
+    document.head.appendChild(style);
 
-            // This is where you will plug in your Neon DB API later
-            setTimeout(() => {
-                form.innerHTML = `
-                    <div style="text-align: center; padding: 40px; background: #1d1d1f; border-radius: 12px; border: 1px solid #333;">
-                        <h3 style="color: white; margin-bottom: 10px;">Audit Requested</h3>
-                        <p style="color: #86868b;">Our lead strategist will review your pipeline and contact you within 24 hours.</p>
-                    </div>
-                `;
-            }, 1500);
-        });
-    }
-
-    // 3. Navigation Highlighting
-    const currentPage = window.location.pathname.split("/").pop();
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
+    // 3. Header Scrolled State
+    const nav = document.querySelector('.glass-nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
         }
     });
 });
