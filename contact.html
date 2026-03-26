@@ -8,6 +8,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Cal.com embed script (loads in background, shows popup on button click) -->
+  <script>
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    Cal("init", { origin: "https://cal.com" });
+    Cal("ui", {
+      theme: "dark",
+      styles: { branding: { brandColor: "#c9a84c" } },
+      hideEventTypeDetails: false
+    });
+  </script>
 </head>
 <body>
 
@@ -42,19 +58,25 @@
   <section style="padding-top: 2rem;">
     <div class="container">
       <div class="contact-grid">
-        <!-- Left: Info -->
+
+        <!-- Left: Booking + Direct contact -->
         <div class="contact-info">
           <h2>Book a Free Discovery Call</h2>
-          <p>The easiest way to get started. 30 minutes, no pitch, no pressure. Just a conversation about your business and whether AI makes sense for your sales team right now.</p>
+          <p>30 minutes, no pitch, no pressure. Just a conversation about your business and whether AI makes sense for your sales team right now.</p>
 
-          <!-- Cal.com booking -->
-          <div class="card" style="text-align: center; padding: 3rem 2rem; margin-bottom: 2.5rem;">
+          <!-- Cal.com booking card -->
+          <div class="card" style="text-align: center; padding: 3rem 2rem; margin: 1.5rem 0 2.5rem;">
             <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--color-gold);">&#128197;</div>
             <h3 style="margin-bottom: 0.75rem;">Pick a Time That Works</h3>
-            <p style="margin: 0 auto 1.5rem; font-size: 0.9rem;">Choose a slot from my calendar. I'll confirm within 24 hours.</p>
-            <!-- Replace YOUR_CALCOM_USERNAME with your Cal.com username after signing up -->
-            <a href="https://cal.com/YOUR_CALCOM_USERNAME/discovery-call" target="_blank" rel="noopener" class="btn btn-primary">Choose a Time Slot</a>
-            <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.75rem;">Free scheduling via Cal.com</p>
+            <p style="margin: 0 auto 1.5rem; font-size: 0.9rem;">Choose a slot from my calendar — opens right here, no new tab needed.</p>
+            <button
+              class="btn btn-primary"
+              data-cal-link="aisalesadvisory/discovery-call"
+              data-cal-config='{"layout":"month_view"}'
+            >
+              Choose a Time Slot
+            </button>
+            <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 1rem;">Free scheduling via Cal.com</p>
           </div>
 
           <h3 style="margin-bottom: 1.5rem;">Or Reach Out Directly</h3>
@@ -71,7 +93,7 @@
             <div class="contact-method-icon">&#128279;</div>
             <div>
               <h4>LinkedIn</h4>
-              <p><a href="https://linkedin.com" target="_blank" rel="noopener">Connect with Bhaskar</a></p>
+              <p><a href="https://linkedin.com/in/bhaskarsravya" target="_blank" rel="noopener">Connect with Bhaskar</a></p>
             </div>
           </div>
 
@@ -84,13 +106,12 @@
           </div>
         </div>
 
-        <!-- Right: Contact Form via Formspree -->
+        <!-- Right: Contact Form → Google Sheets -->
         <div class="contact-form">
           <h3 style="margin-bottom: 0.5rem;">Send a Message</h3>
           <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Tell me a bit about your business and what you're thinking. I respond to every message personally, usually within a day.</p>
 
-          <!-- Replace YOUR_FORMSPREE_ID with your Formspree form ID after signing up -->
-          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <form id="contactForm">
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">First Name</label>
@@ -127,11 +148,11 @@
               <label for="interest">What are you most interested in?</label>
               <select id="interest" name="interest">
                 <option value="">Select...</option>
-                <option value="strategy">AI Sales Strategy &amp; Roadmapping</option>
-                <option value="gtm">Go-to-Market AI Acceleration</option>
-                <option value="coaching">AI Literacy &amp; Leadership Coaching</option>
-                <option value="automation">Sales Process Automation</option>
-                <option value="not-sure">Not sure yet — just exploring</option>
+                <option value="AI Sales Strategy">AI Sales Strategy &amp; Roadmapping</option>
+                <option value="GTM Acceleration">Go-to-Market AI Acceleration</option>
+                <option value="Leadership Coaching">AI Literacy &amp; Leadership Coaching</option>
+                <option value="Process Automation">Sales Process Automation</option>
+                <option value="Not sure yet">Not sure yet — just exploring</option>
               </select>
             </div>
 
@@ -140,28 +161,26 @@
               <textarea id="message" name="message" placeholder="What's going on with your sales team? What are you hoping AI can help with?" rows="5"></textarea>
             </div>
 
-            <!-- Honeypot for spam protection -->
-            <input type="text" name="_gotcha" style="display:none">
+            <!-- Honeypot spam protection -->
+            <input type="text" name="honeypot" style="display:none" tabindex="-1" autocomplete="off">
 
-            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+            <button type="submit" id="submitBtn" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
           </form>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Newsletter -->
-  <section class="bg-dark" style="margin-top: 4rem;">
-    <div class="container text-center">
-      <span class="section-label">Stay in the Loop</span>
-      <h2>AI + Sales: What Actually Works</h2>
-      <p style="margin: 0.75rem auto 2rem;">Short weekly email with practical AI tips for sales teams. No fluff, no vendor pitches.</p>
-      <!-- Buttondown newsletter — replace YOUR_USERNAME with your Buttondown username -->
-      <form class="newsletter-form" style="margin: 0 auto;" action="https://buttondown.com/api/emails/embed-subscribe/YOUR_USERNAME" method="post" target="popupwindow">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-      <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.75rem;">No spam. Unsubscribe anytime.</p>
+          <!-- Success state (hidden until form submits) -->
+          <div id="formSuccess" style="display:none; margin-top: 1.5rem; padding: 2rem; background: rgba(201,168,76,0.08); border: 1px solid var(--color-gold); border-radius: 12px; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.75rem;">&#10003;</div>
+            <p style="color: var(--color-gold); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Message received!</p>
+            <p style="font-size: 0.9rem;">Thanks for reaching out. I'll get back to you within one business day.</p>
+          </div>
+
+          <!-- Error state (hidden until needed) -->
+          <div id="formError" style="display:none; margin-top: 1.5rem; padding: 1.25rem; background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.3); border-radius: 8px; text-align: center;">
+            <p style="color: #ef4444; font-size: 0.9rem;">Something went wrong. Please email me directly at <a href="mailto:bhaskar.sravya2627@gmail.com" style="color:#ef4444;">bhaskar.sravya2627@gmail.com</a></p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -195,7 +214,7 @@
           <h4>Get in Touch</h4>
           <ul>
             <li><a href="contact.html">Book a Call</a></li>
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://linkedin.com/in/bhaskarsravya" target="_blank" rel="noopener">LinkedIn</a></li>
             <li><a href="mailto:bhaskar.sravya2627@gmail.com">bhaskar.sravya2627@gmail.com</a></li>
           </ul>
         </div>
@@ -203,16 +222,65 @@
       <div class="footer-bottom">
         <p>&copy; 2026 AI Sales Advisory. All rights reserved.</p>
         <div class="footer-social">
-          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://linkedin.com/in/bhaskarsravya" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
         </div>
       </div>
     </div>
   </footer>
 
   <script>
+    // Mobile nav
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
     hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // -------------------------------------------------------
+    // Contact form → Google Sheets via Google Apps Script
+    // -------------------------------------------------------
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwj6dof9sN5Ni11xIONXjesPGUNXNeAvRJiQh1AjwAFpC82trVis4FqXUvcoLiiMtD9Wg/exec';
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      // Honeypot check
+      if (this.honeypot.value) return;
+
+      const data = {
+        firstName:  this.firstName.value.trim(),
+        lastName:   this.lastName.value.trim(),
+        email:      this.email.value.trim(),
+        company:    this.company.value.trim(),
+        teamSize:   this.teamSize.value,
+        interest:   this.interest.value,
+        message:    this.message.value.trim(),
+        submittedAt: new Date().toISOString()
+      };
+
+      try {
+        // mode: no-cors because Apps Script doesn't return CORS headers for web app URLs
+        // The data still reaches the sheet — we just can't read the response
+        await fetch(SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        // Show success (fetch resolves for no-cors even without reading response)
+        this.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+
+      } catch (err) {
+        document.getElementById('formError').style.display = 'block';
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+      }
+    });
   </script>
+
 </body>
 </html>
