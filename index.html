@@ -1,65 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Sales Advisory</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Sales Advisory — I help startups and SMBs use AI to sell better and faster. Practical, hands-on guidance for your sales team's AI strategy.">
+  <title>AI Sales Advisory | Practical AI Strategy for Sales Teams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">AI Sales Advisory</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="hero">
-            <h1>Transform Your Sales with AI</h1>
-            <p>Leverage cutting-edge artificial intelligence to supercharge your sales strategy.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </section>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">AI<span>Sales</span>Advisory</a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>AI Sales Analytics</h3>
-                    <p>Data-driven insights to optimize your sales pipeline.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Predictive Lead Scoring</h3>
-                    <p>Identify high-value prospects with machine learning.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Sales Automation</h3>
-                    <p>Streamline repetitive tasks and focus on closing deals.</p>
-                </div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="section-label">Boutique AI Sales Consultancy</span>
+        <h1>Your Sales Team Should Be Using AI.<br><span class="highlight">I Can Help You Get There.</span></h1>
+        <p>I work with founders and sales leaders at startups and growing businesses who know AI matters but aren't quite sure where to begin. I spent 10+ years at LinkedIn and Ding.com designing the sales processes and AI systems those teams ran on. Now I help companies like yours do the same — without the enterprise budget.</p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">Book a Free Consultation</a>
+          <a href="services.html" class="btn btn-outline btn-lg">See How I Can Help</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <h3>10+</h3>
+            <p>Years in Sales Strategy &amp; Ops</p>
+          </div>
+          <div class="stat">
+            <h3>LinkedIn</h3>
+            <p>7 Years, Sales Strategy &amp; Ops</p>
+          </div>
+          <div class="stat">
+            <h3>Ding.com</h3>
+            <p>Pricing &amp; Product Strategy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Opportunity -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Problem I See</span>
+        <h2>Most Sales Teams Know They Should Use AI. Very Few Know Where to Start.</h2>
+        <p>There's no shortage of AI tools out there. The hard part is figuring out which ones matter for your business, how they fit into how your team already sells, and how to get people to actually use them. That's the problem I help solve.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">&#9881;</div>
+          <h3>A Plan That Fits Your Business</h3>
+          <p>Not a generic AI playbook. I look at how your team actually sells today, your tools, your stage of growth — and build an AI roadmap around that reality.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9889;</div>
+          <h3>Move Fast Without Breaking Things</h3>
+          <p>I've done this at a 4-person startup and at a company with 20,000+ employees. I know what works at different scales and how to get from idea to working process quickly.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#127919;</div>
+          <h3>Stop Falling Behind</h3>
+          <p>Your competitors are already experimenting with AI in their sales processes. The gap between "experimenting" and "not started" widens every quarter. Let's close it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="bg-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I Do</span>
+        <h2>Practical Help, Not Theory</h2>
+        <p>I offer a few different ways to work together depending on what you need. Everything is tailored — I don't do cookie-cutter.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">&#128202;</div>
+          <h3>AI Sales Strategy &amp; Roadmapping</h3>
+          <p>I'll dig into how your sales team operates today, figure out where AI can make the biggest difference, and give you a clear plan to get there — priorities, tools, timeline, the lot.</p>
+          <a href="services.html" class="btn btn-ghost" style="margin-top: 1rem; padding-left: 0;">Learn more →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128640;</div>
+          <h3>Go-to-Market AI Acceleration</h3>
+          <p>Already selling but want to plug AI into your pipeline? I help with things like smarter lead scoring, automated outreach, better forecasting — the stuff that actually moves numbers.</p>
+          <a href="services.html" class="btn btn-ghost" style="margin-top: 1rem; padding-left: 0;">Learn more →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128218;</div>
+          <h3>AI Literacy for Sales Leaders</h3>
+          <p>Workshops and coaching for your leadership team. I break down what AI can (and can't) do for sales, show real tools in action, and help you make informed decisions about what to adopt.</p>
+          <a href="services.html" class="btn btn-ghost" style="margin-top: 1rem; padding-left: 0;">Learn more →</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9878;</div>
+          <h3>Sales Process Automation</h3>
+          <p>Your team is probably spending hours on things that could be automated. I'll map out where the biggest time-sinks are and design automation that your team can actually implement.</p>
+          <a href="services.html" class="btn btn-ghost" style="margin-top: 1rem; padding-left: 0;">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section>
+    <div class="container">
+      <div class="grid-2" style="align-items: center;">
+        <div>
+          <span class="section-label">How It Works</span>
+          <h2>How It Usually Goes</h2>
+          <div class="gold-line"></div>
+          <p style="margin-bottom: 2rem;">Every engagement is a bit different, but this is the general shape of it. No endless proposals, no six weeks of "alignment." We get moving.</p>
+        </div>
+        <div>
+          <div class="process-step">
+            <div class="process-number">1</div>
+            <div>
+              <h4>We Have a Chat</h4>
+              <p>30 minutes, no commitment. Tell me about your business, your sales team, what's working and what's not. I'll be upfront about whether I can help.</p>
             </div>
-        </section>
+          </div>
+          <div class="process-step">
+            <div class="process-number">2</div>
+            <div>
+              <h4>I Dig Into the Details</h4>
+              <p>If we decide to work together, I'll look closely at your sales workflows, your data, your tools — and figure out where AI fits (and where it doesn't).</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-number">3</div>
+            <div>
+              <h4>You Get a Clear Plan</h4>
+              <p>A prioritised roadmap with specific recommendations, tool suggestions, and a realistic timeline. Something your team can actually act on.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-number">4</div>
+            <div>
+              <h4>I Stick Around</h4>
+              <p>I don't hand you a document and disappear. I stay involved as you execute — answering questions, troubleshooting, adjusting the plan as things evolve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>AI Sales Advisory helps businesses harness the power of artificial intelligence to revolutionize their sales processes.</p>
-        </section>
+  <!-- CTA Banner -->
+  <section>
+    <div class="container">
+      <div class="cta-banner">
+        <span class="section-label">Interested?</span>
+        <h2>Let's Talk About Your Sales Team</h2>
+        <p>Book a free 30-minute call. No pitch, no pressure. I'll listen to what's going on and tell you honestly if I think I can help.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Book Your Free Call</a>
+        <a href="services.html" class="btn btn-outline btn-lg">View Services</a>
+      </div>
+    </div>
+  </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Ready to transform your sales? Get in touch today.</p>
-        </section>
-    </main>
+  <!-- Newsletter -->
+  <section class="bg-dark">
+    <div class="container text-center">
+      <span class="section-label">Stay in the Loop</span>
+      <h2>AI + Sales: What Actually Works</h2>
+      <p style="margin: 0.75rem auto 2rem;">I send a short weekly email with practical AI tips, tools I'm testing, and lessons from working with sales teams. Written for busy leaders, not engineers.</p>
+      <!-- Buttondown newsletter form — replace YOUR_USERNAME with your Buttondown username -->
+      <form class="newsletter-form" style="margin: 0 auto;" action="https://buttondown.com/api/emails/embed-subscribe/YOUR_USERNAME" method="post" target="popupwindow">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.75rem;">No spam. Unsubscribe anytime. Free via Buttondown.</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 AI Sales Advisory. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">AI<span>Sales</span>Advisory</a>
+          <p>Helping startups and growing businesses use AI to sell smarter. Based on 10+ years at LinkedIn and Ding.com.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">AI Strategy</a></li>
+            <li><a href="services.html">GTM Acceleration</a></li>
+            <li><a href="services.html">Leadership Coaching</a></li>
+            <li><a href="services.html">Process Automation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li><a href="contact.html">Book a Call</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:bhaskar.sravya2627@gmail.com">bhaskar.sravya2627@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AI Sales Advisory. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/main.js"></script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
 </body>
 </html>
-

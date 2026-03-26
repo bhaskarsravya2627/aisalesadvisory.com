@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with AI Sales Advisory. Book a free discovery call or send a message to discuss how AI can help your sales team.">
+  <title>Contact | AI Sales Advisory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">AI<span>Sales</span>Advisory</a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <span class="section-label">Get in Touch</span>
+      <h1>Let's Have a Conversation</h1>
+      <div class="gold-line-center"></div>
+      <p>Whether you've got a clear idea of what you need or you're just curious about how AI could help your sales team — reach out. Happy to chat.</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section style="padding-top: 2rem;">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <h2>Book a Free Discovery Call</h2>
+          <p>The easiest way to get started. 30 minutes, no pitch, no pressure. Just a conversation about your business and whether AI makes sense for your sales team right now.</p>
+
+          <!-- Cal.com booking -->
+          <div class="card" style="text-align: center; padding: 3rem 2rem; margin-bottom: 2.5rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--color-gold);">&#128197;</div>
+            <h3 style="margin-bottom: 0.75rem;">Pick a Time That Works</h3>
+            <p style="margin: 0 auto 1.5rem; font-size: 0.9rem;">Choose a slot from my calendar. I'll confirm within 24 hours.</p>
+            <!-- Replace YOUR_CALCOM_USERNAME with your Cal.com username after signing up -->
+            <a href="https://cal.com/YOUR_CALCOM_USERNAME/discovery-call" target="_blank" rel="noopener" class="btn btn-primary">Choose a Time Slot</a>
+            <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.75rem;">Free scheduling via Cal.com</p>
+          </div>
+
+          <h3 style="margin-bottom: 1.5rem;">Or Reach Out Directly</h3>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">&#9993;</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:bhaskar.sravya2627@gmail.com">bhaskar.sravya2627@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">&#128279;</div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p><a href="https://linkedin.com" target="_blank" rel="noopener">Connect with Bhaskar</a></p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">&#127760;</div>
+            <div>
+              <h4>Website</h4>
+              <p><a href="https://aisalesadvisory.com">aisalesadvisory.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form via Formspree -->
+        <div class="contact-form">
+          <h3 style="margin-bottom: 0.5rem;">Send a Message</h3>
+          <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Tell me a bit about your business and what you're thinking. I respond to every message personally, usually within a day.</p>
+
+          <!-- Replace YOUR_FORMSPREE_ID with your Formspree form ID after signing up -->
+          <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your company name">
+            </div>
+
+            <div class="form-group">
+              <label for="teamSize">Sales Team Size</label>
+              <select id="teamSize" name="teamSize">
+                <option value="">Select...</option>
+                <option value="1-5">1 – 5 people</option>
+                <option value="6-20">6 – 20 people</option>
+                <option value="21-50">21 – 50 people</option>
+                <option value="50+">50+ people</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="interest">What are you most interested in?</label>
+              <select id="interest" name="interest">
+                <option value="">Select...</option>
+                <option value="strategy">AI Sales Strategy &amp; Roadmapping</option>
+                <option value="gtm">Go-to-Market AI Acceleration</option>
+                <option value="coaching">AI Literacy &amp; Leadership Coaching</option>
+                <option value="automation">Sales Process Automation</option>
+                <option value="not-sure">Not sure yet — just exploring</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell me about your situation</label>
+              <textarea id="message" name="message" placeholder="What's going on with your sales team? What are you hoping AI can help with?" rows="5"></textarea>
+            </div>
+
+            <!-- Honeypot for spam protection -->
+            <input type="text" name="_gotcha" style="display:none">
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-dark" style="margin-top: 4rem;">
+    <div class="container text-center">
+      <span class="section-label">Stay in the Loop</span>
+      <h2>AI + Sales: What Actually Works</h2>
+      <p style="margin: 0.75rem auto 2rem;">Short weekly email with practical AI tips for sales teams. No fluff, no vendor pitches.</p>
+      <!-- Buttondown newsletter — replace YOUR_USERNAME with your Buttondown username -->
+      <form class="newsletter-form" style="margin: 0 auto;" action="https://buttondown.com/api/emails/embed-subscribe/YOUR_USERNAME" method="post" target="popupwindow">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.75rem;">No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">AI<span>Sales</span>Advisory</a>
+          <p>Helping startups and growing businesses use AI to sell smarter. Based on 10+ years at LinkedIn and Ding.com.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">AI Strategy</a></li>
+            <li><a href="services.html">GTM Acceleration</a></li>
+            <li><a href="services.html">Leadership Coaching</a></li>
+            <li><a href="services.html">Process Automation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li><a href="contact.html">Book a Call</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:bhaskar.sravya2627@gmail.com">bhaskar.sravya2627@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AI Sales Advisory. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>
