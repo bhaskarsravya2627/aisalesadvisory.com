@@ -1,0 +1,19 @@
+/*
+  # Prevent your site being embedded in iframes (clickjacking protection)
+  X-Frame-Options: DENY
+
+  # Stop browsers guessing file types (prevents certain attack vectors)
+  X-Content-Type-Options: nosniff
+
+  # Control what referrer info is sent when visitors click links
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Force HTTPS for 1 year — browser won't try HTTP even if typed
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # Disable access to camera, mic, location — not needed on this site
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+  # Content Security Policy — controls what external resources the site can load
+  # Allows: Google Fonts, Cal.com embed, Google Apps Script (for contact form)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://script.google.com https://app.cal.com https://cal.com; frame-src https://cal.com https://app.cal.com; img-src 'self' data: https:;
