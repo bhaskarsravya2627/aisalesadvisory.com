@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4FV912GL2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q4FV912GL2');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="AI Sales Advisory — I help startups and SMBs use AI to sell better and faster. Practical, hands-on guidance for your sales team's AI strategy.">
   <title>AI Sales Advisory | Practical AI Strategy for Sales Teams</title>
@@ -63,7 +71,7 @@
         <h1>Your Sales Team Should Be Using AI.<br><span class="highlight">I Can Help You Get There.</span></h1>
         <p>I work with founders and sales leaders at startups and growing businesses who know AI matters but aren't quite sure where to begin. Drawing on 10+ years across LinkedIn and Ding.com — designing GTM operations, building AI-driven workflows, and working directly with senior leadership — I now help companies like yours do the same, without the enterprise budget.</p>
         <div class="hero-buttons">
-          <a href="contact.html" class="btn btn-primary btn-lg">Book a Free Consultation</a>
+          <a href="contact.html" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined'){gtag('event','cta_click',{event_category:'CTA',event_label:'Book Free Consultation - Hero'})}">Book a Free Consultation</a>
           <a href="services.html" class="btn btn-outline btn-lg">See How I Can Help</a>
         </div>
         <div class="hero-stats">
@@ -200,7 +208,7 @@
         <span class="section-label">Interested?</span>
         <h2>Let's Talk About Your Sales Team</h2>
         <p>Book a free 30-minute call. No pitch, no pressure. I'll listen to what's going on and tell you honestly if I think I can help.</p>
-        <a href="contact.html" class="btn btn-primary btn-lg">Book Your Free Call</a>
+        <a href="contact.html" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined'){gtag('event','cta_click',{event_category:'CTA',event_label:'Book Free Call - Homepage CTA'})}">Book Your Free Call</a>
         <a href="services.html" class="btn btn-outline btn-lg">View Services</a>
       </div>
     </div>

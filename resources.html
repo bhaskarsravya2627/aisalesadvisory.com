@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4FV912GL2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q4FV912GL2');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="35 free AI prompts for B2B sales teams. Copy-paste into ChatGPT, Claude, or Gemini for cold emails, prospecting, discovery, objections, and pipeline reviews.">
   <meta name="keywords" content="AI prompts for sales, ChatGPT prompts for sales teams, Claude prompts for sales, Gemini prompts for B2B sales, free sales prompt library, AI cold email prompts, sales prospecting prompts, MEDDIC AI prompt, discovery call prompts, objection handling AI, sales forecasting prompts, AI for AEs, AI for sales leaders">
@@ -1430,7 +1438,7 @@ Format as a document for a 15-minute review. Tone: strategic, specific, action-o
         <span class="section-label">Want More Than AI Prompts?</span>
         <h2>Let's Build an AI-Powered Sales Strategy for Your Team</h2>
         <p>Prompts are a starting point. If you want AI embedded into how your team actually prospects, qualifies, and closes — the workflows, the tools, the adoption playbook — that's what I help B2B sales teams do.</p>
-        <a href="contact.html" class="btn btn-primary btn-lg">Book a Free Discovery Call</a>
+        <a href="contact.html" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined'){gtag('event','cta_click',{event_category:'CTA',event_label:'Book Discovery Call - Resources Page'})}">Book a Free Discovery Call</a>
       </div>
     </div>
   </section>
@@ -1532,6 +1540,16 @@ Format as a document for a 15-minute review. Tone: strategic, specific, action-o
     function copyPrompt(btn) {
       const card       = btn.closest('.prompt-card');
       const promptText = card.querySelector('.prompt-text').textContent;
+      // GA event: track which prompt was copied
+      const promptTitle = card.querySelector('h3') ? card.querySelector('h3').textContent.trim() : 'unknown';
+      const promptCategory = card.dataset.category || 'unknown';
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'copy_prompt', {
+          event_category: 'Prompt Library',
+          event_label: promptTitle,
+          prompt_category: promptCategory
+        });
+      }
       navigator.clipboard.writeText(promptText).then(() => {
         const original = btn.textContent;
         btn.textContent = 'Copied!';
