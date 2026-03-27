@@ -1,0 +1,36 @@
+# AI Sales Advisory
+
+> Boutique AI sales consultancy helping startups and SMBs use AI to sell smarter. Founded by Bhaskar Kuchimanchi, with 10+ years across LinkedIn (Sales Strategy & GTM Operations) and Ding.com (Pricing & Product Strategy).
+
+AI Sales Advisory works with founders and sales leaders who want to integrate AI into their sales processes but aren't sure where to start or how to do it well. Unlike large consulting firms, every engagement is hands-on, tailored, and led directly by someone who has built and run these systems at scale.
+
+## Services
+
+- [AI Sales Strategy & Roadmapping](https://aisalesadvisory.com/services.html): Audit your current sales process, identify where AI creates the most leverage, and build a prioritised roadmap with specific tools, timelines, and next steps.
+- [Go-to-Market AI Acceleration](https://aisalesadvisory.com/services.html): Plug AI into an existing pipeline — smarter lead scoring, automated outreach, better forecasting, and pipeline visibility.
+- [AI Literacy for Sales Leaders](https://aisalesadvisory.com/services.html): Workshops and coaching for leadership teams. Practical, not theoretical — focused on real tools and real decisions.
+- [Sales Process Automation](https://aisalesadvisory.com/services.html): Map the biggest time-sinks in your sales workflow and design automation your team can actually implement and sustain.
+
+## Engagement Models
+
+- **Discovery Sprint**: A focused, time-boxed engagement to assess your sales AI readiness and deliver a clear roadmap. Custom pricing.
+- **Strategic Engagement**: A deeper project-based engagement covering strategy, tooling, and implementation support. Custom pricing.
+- **Ongoing Advisory**: A retainer model for teams that want a long-term strategic partner embedded in their operations. Custom pricing.
+
+## About the Founder
+
+Bhaskar Kuchimanchi has 10+ years in sales strategy and operations. At LinkedIn, he spent 5+ years across Sales Strategy and GTM Operations teams, most recently working on the Enterprise Ads business across EMEA — covering account segmentation, forecasting, quota optimisation, and executive business reviews, with a consistent focus on embedding AI into operational workflows at scale. Before LinkedIn, he spent 3+ years at Ding.com in Pricing and Product Strategy, where he built a rules-based pricing engine that generated over $1M in annual gross profit. He holds an MSc in Business Analytics from UCD Michael Smurfit Graduate Business School and a certificate in Strategic and Tactical Pricing from Cornell University.
+
+## Key Pages
+
+- [Home](https://aisalesadvisory.com/): Overview of the advisory, who it's for, how engagements work, and how to get started.
+- [About](https://aisalesadvisory.com/about.html): Bhaskar's background, experience at LinkedIn and Ding.com, and philosophy on AI in sales.
+- [Services](https://aisalesadvisory.com/services.html): Detailed breakdown of all four service areas and the three engagement models.
+- [Free AI Prompt Library](https://aisalesadvisory.com/resources.html): 28 free, ready-to-use AI prompts for sales teams — covering prospect research, cold outreach, discovery calls, objection handling, pipeline reviews, and internal productivity. Each prompt includes AI model guidance and requires no attachments.
+- [Contact](https://aisalesadvisory.com/contact.html): Book a free 30-minute discovery call via Cal.com, or send a message directly.
+
+## Contact
+
+- Website: https://aisalesadvisory.com
+- Book a call: https://aisalesadvisory.com/contact.html
+- LinkedIn: https://www.linkedin.com/in/kbslalith/
