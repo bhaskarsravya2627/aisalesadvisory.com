@@ -750,7 +750,7 @@ section { padding: 6rem 0; }
 .mt-4 { margin-top: 2rem; }
 
 /* ---------- Prompt Library ---------- */
-.prompt-controls { margin-bottom: 2rem; }
+.prompt-controls { margin-bottom: 1.5rem; }
 
 .prompt-search {
   width: 100%;
