@@ -16,4 +16,4 @@
 
   # Content Security Policy — controls what external resources the site can load
   # Allows: Google Fonts, Cal.com embed, Google Apps Script (for contact form)
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://script.google.com https://app.cal.com https://cal.com; frame-src https://cal.com https://app.cal.com; img-src 'self' data: https:;
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://app.cal.com https://cal.com; frame-src https://cal.com https://app.cal.com; img-src 'self' data: https:;

@@ -20,17 +20,17 @@ AI Sales Advisory helps growing businesses turn customer conversations into acti
 
 ## About
 
-Founder Bhaskar brings more than 10 years of experience across sales strategy, GTM operations, pricing and product, including roles at LinkedIn and Ding.com.
+The people behind AI Sales Advisory combine experience across product engineering, AI, data and analytics, sales strategy, pricing, go-to-market operations and enterprise delivery. This multidisciplinary perspective connects the commercial case to the technical product and the operating workflow around it.
 
 ## Key pages
 
 - [Home](https://aisalesadvisory.com/): Positioning, capabilities, use cases, process and FAQs.
 - [Solutions](https://aisalesadvisory.com/services.html): Custom agents, white-label systems and sales workflows.
-- [Why us](https://aisalesadvisory.com/about.html): Founder background and product principles.
+- [Why us](https://aisalesadvisory.com/about.html): The company's combined capabilities and product principles.
 - [Insights](https://aisalesadvisory.com/resources.html): Practical voice AI buyer guidance.
 - [Book a call](https://aisalesadvisory.com/contact.html): Enquiry form and Cal.com scheduling.
 
 ## Contact
 
 - Website: https://aisalesadvisory.com
-- LinkedIn: https://www.linkedin.com/in/kbslalith/
+- Book a strategy call: https://aisalesadvisory.com/contact.html
