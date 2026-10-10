@@ -1,14 +1,14 @@
 # AI Sales Advisory
 
-> A voice AI product studio that designs, builds and launches dependable voice agents for sales and service teams, including white-label solutions.
+> Voice AI for high-value revenue and operational workflows, with white-label delivery available for agencies and software firms.
 
-AI Sales Advisory helps growing businesses turn customer conversations into action. Solutions are built around a defined operational outcome and can answer calls, qualify leads, book appointments, route requests, update business systems and support follow-up workflows.
+AI Sales Advisory designs focused voice agents for conversations where delay costs revenue, cash flow or service capacity. Priority workflows include urgent job intake and dispatch, quote follow-up, payment resolution and maintenance triage. The primary sectors are field services, construction, property and facilities operations, and other B2B service businesses.
 
 ## Solutions
 
-- [Custom voice agents](https://aisalesadvisory.com/services.html#custom-agents): Purpose-built agents for reception, qualification, scheduling, triage and follow-up.
+- [Workflow agents](https://aisalesadvisory.com/services.html#custom-agents): Purpose-built agents for urgent job intake, quote conversion, payment resolution and maintenance triage.
 - [White-label voice AI](https://aisalesadvisory.com/services.html#white-label): Branded voice AI products for agencies, consultants and software companies.
-- [AI sales workflows](https://aisalesadvisory.com/services.html#workflows): Connect conversations to CRM records, calendars, alerts, tasks and next-best actions.
+- [Connected workflows](https://aisalesadvisory.com/services.html#workflows): Connect conversations to job records, CRM or accounting data, calendars, alerts, messaging and human escalation.
 - Voice AI strategy: Scope the use case, commercial case, integrations, risks and launch plan.
 
 ## Delivery approach
