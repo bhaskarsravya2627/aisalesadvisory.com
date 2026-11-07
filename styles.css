@@ -74,3 +74,11 @@ html,body{overflow-x:hidden}
   .mobile-menu{background:rgba(250,252,247,.97);border-bottom:1px solid rgba(70,104,93,.15);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
 }
 @media (prefers-reduced-motion:reduce){.nav-dropdown-toggle:after{transition:none}}
+
+/* Accessible navigation and a calmer reading rhythm. */
+.skip-link{position:fixed;top:10px;left:16px;z-index:200;background:var(--ink);color:white;padding:10px 16px;border-radius:8px;transform:translateY(-150%)}.skip-link:focus{transform:none}
+main[id]{scroll-margin-top:20px}.guide-list{padding-left:22px;line-height:1.8}.guide-list li{margin:0 0 18px;padding-left:7px}.guide-list strong{color:var(--ink)}
+.booking-fallback a{color:var(--teal-dark);text-decoration:underline;text-underline-offset:3px}.booking-fallback{font-size:14px;line-height:1.7}
+.footer-bottom{align-items:center;flex-wrap:wrap;gap:14px}.motion-toggle{border:1px solid #b7d0c366;background:transparent;border-radius:20px;padding:7px 11px;color:#c5d8d0;cursor:pointer;font-size:11px;line-height:1.2}.motion-toggle:hover{background:#ffffff12}
+.motion-paused *,.motion-paused *:before,.motion-paused *:after{animation-play-state:paused!important}.motion-paused{scroll-behavior:auto}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}

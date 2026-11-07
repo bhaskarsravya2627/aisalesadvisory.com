@@ -6,3 +6,7 @@ The Command Centre, currently in build for clients across these solutions, is in
 
 - [Solutions](https://aisalesadvisory.com/solutions.html)
 - [Book a strategy call](https://aisalesadvisory.com/contact.html)
+
+- [How we work](https://aisalesadvisory.com/services.html): Focused pilots and partner delivery.
+- [About](https://aisalesadvisory.com/about.html): Product, commercial and operational approach.
+- [Voice AI field guide](https://aisalesadvisory.com/resources.html): Workflow fit, rollout readiness and partnership questions.
