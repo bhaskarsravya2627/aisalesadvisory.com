@@ -4,6 +4,12 @@
 
 AI Sales Advisory designs focused voice agents for conversations where delay costs revenue, cash flow or service capacity. Priority workflows include urgent job intake and dispatch, quote follow-up, payment resolution and maintenance triage. The primary sectors are field services, construction, property and facilities operations, and other B2B service businesses.
 
+## Solution examples
+
+- [Travel sales and customer care](https://aisalesadvisory.com/solutions.html#travel): A solution concept for travel sellers, with guided demonstrations and integrations scoped for each engagement.
+- [Service business receptionist](https://aisalesadvisory.com/solutions.html#service): A solution concept for capturing enquiries, appointment booking, and human escalation.
+- [Book a guided demo](https://aisalesadvisory.com/contact.html): Meet with the team to explore an example and discuss a tailored solution.
+
 ## Solutions
 
 - [Workflow agents](https://aisalesadvisory.com/services.html#custom-agents): Purpose-built agents for urgent job intake, quote conversion, payment resolution and maintenance triage.
@@ -25,7 +31,8 @@ The people behind AI Sales Advisory combine experience across product engineerin
 ## Key pages
 
 - [Home](https://aisalesadvisory.com/): Positioning, capabilities, use cases, process and FAQs.
-- [Solutions](https://aisalesadvisory.com/services.html): Custom agents, white-label systems and sales workflows.
+- [Solution examples](https://aisalesadvisory.com/solutions.html): Travel and service-business concepts, with guided demos.
+- [Services](https://aisalesadvisory.com/services.html): Workflow agents, pilots, white-label delivery and connected workflows.
 - [Why us](https://aisalesadvisory.com/about.html): The company's combined capabilities and product principles.
 - [Book a call](https://aisalesadvisory.com/contact.html): Cal.com scheduling for a focused strategy conversation.
 
