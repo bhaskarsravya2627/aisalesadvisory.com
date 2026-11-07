@@ -1,8 +1,8 @@
 # AI Sales Advisory
 
-AI Sales Advisory develops voice AI solutions for travel sales and customer care, and service business reception. Guided demonstrations are available by booking a call. The travel demo uses fictional inventory; live supplier integrations require agreement. Solutions can be tailored to customer workflows and integrations, including capabilities under development or scoped for each engagement. The service receptionist demo gathers appointment details, requests confirmation, creates a calendar event and records the booking.
+AI Sales Advisory designs and builds tailored voice AI solutions for travel sales and customer care, service business reception, and other customer-facing workflows. Solutions can connect conversations with business rules, operational processes and relevant systems.
 
 A shared workbench for monitoring conversations, reviewing outcomes and bringing performance metrics to executive review is currently in build.
 
 - [Solutions](https://aisalesadvisory.com/solutions.html)
-- [Book a guided demo](https://aisalesadvisory.com/contact.html)
+- [Book a strategy call](https://aisalesadvisory.com/contact.html)
