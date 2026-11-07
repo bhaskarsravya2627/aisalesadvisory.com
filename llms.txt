@@ -8,6 +8,7 @@ AI Sales Advisory designs focused voice agents for conversations where delay cos
 
 - [Travel sales and customer care](https://aisalesadvisory.com/solutions.html#travel): A solution concept for travel sellers, with guided demonstrations and integrations scoped for each engagement.
 - [Service business receptionist](https://aisalesadvisory.com/solutions.html#service): A solution concept for capturing enquiries, appointment booking, and human escalation.
+- [Agent Workbench (planned)](https://aisalesadvisory.com/solutions.html#workbench): A proposed workspace for reviewing agent work, guiding improvements and comparing agent approaches. Illustrative and not currently available.
 - [Book a guided demo](https://aisalesadvisory.com/contact.html): Meet with the team to explore an example and discuss a tailored solution.
 
 ## Solutions
