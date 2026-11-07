@@ -7,3 +7,5 @@
 
 .sol-hero>* ,.sol-industry-head>* ,.wb-grid>*{min-width:0}
 @media(max-width:620px){.sol-hero .eyebrow{letter-spacing:.09em;line-height:1.5}.sol-hero h1{overflow-wrap:anywhere}.sol-actions{align-items:flex-start;flex-direction:column;gap:18px}.sol-hero-art{min-height:0}.sol-orbit-label{font-size:8px}.orbit-travel{left:8%}}
+
+.wb-team{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0 0}.wb-team>div{display:flex;flex-direction:column;gap:5px;padding:14px;border-radius:8px;background:#e5f1e8}.wb-team span{font-size:10px;letter-spacing:.1em;color:#487a68;font-weight:700}.wb-team strong{font-size:14px}.wb-team small{font-size:11px;color:#587367}@media(max-width:420px){.wb-team{grid-template-columns:1fr}}
