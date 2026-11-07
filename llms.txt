@@ -1,43 +1,8 @@
 # AI Sales Advisory
 
-> Voice AI for high-value revenue and operational workflows, with white-label delivery available for agencies and software firms.
+AI Sales Advisory develops voice AI solutions for travel sales and customer care, and service business reception. Guided demonstrations are available by booking a call. The travel demo uses fictional inventory; live supplier integrations require agreement. Solutions can be tailored to customer workflows and integrations, including capabilities under development or scoped for each engagement. The service receptionist demo gathers appointment details, requests confirmation, creates a calendar event and records the booking.
 
-AI Sales Advisory designs focused voice agents for conversations where delay costs revenue, cash flow or service capacity. Priority workflows include urgent job intake and dispatch, quote follow-up, payment resolution and maintenance triage. The primary sectors are field services, construction, property and facilities operations, and other B2B service businesses.
+A shared workbench for monitoring conversations, reviewing outcomes and bringing performance metrics to executive review is currently in build.
 
-## Solution examples
-
-- [Travel sales and customer care](https://aisalesadvisory.com/solutions.html#travel): A solution concept for travel sellers, with guided demonstrations and integrations scoped for each engagement.
-- [Service business receptionist](https://aisalesadvisory.com/solutions.html#service): A solution concept for capturing enquiries, appointment booking, and human escalation.
-- [Agent Workbench (planned)](https://aisalesadvisory.com/solutions.html#workbench): A proposed workspace for reviewing agent work, guiding improvements and comparing agent approaches. Illustrative and not currently available.
-- [Book a guided demo](https://aisalesadvisory.com/contact.html): Meet with the team to explore an example and discuss a tailored solution.
-
-## Solutions
-
-- [Workflow agents](https://aisalesadvisory.com/services.html#custom-agents): Purpose-built agents for urgent job intake, quote conversion, payment resolution and maintenance triage.
-- [White-label voice AI](https://aisalesadvisory.com/services.html#white-label): Branded voice AI products for agencies, consultants and software companies.
-- [Connected workflows](https://aisalesadvisory.com/services.html#workflows): Connect conversations to job records, CRM or accounting data, calendars, alerts, messaging and human escalation.
-- Voice AI strategy: Scope the use case, commercial case, integrations, risks and launch plan.
-
-## Delivery approach
-
-1. Find the value: define the job, economics, systems and risks.
-2. Design the experience: map dialogue, tone, guardrails and human hand-offs.
-3. Build and integrate: connect telephony, calendars, CRMs, messaging and relevant APIs.
-4. Launch and improve: test realistic scenarios, monitor performance and iterate.
-
-## About
-
-The people behind AI Sales Advisory combine experience across product engineering, AI, data and analytics, sales strategy, pricing, go-to-market operations and enterprise delivery. This multidisciplinary perspective connects the commercial case to the technical product and the operating workflow around it.
-
-## Key pages
-
-- [Home](https://aisalesadvisory.com/): Positioning, capabilities, use cases, process and FAQs.
-- [Solution examples](https://aisalesadvisory.com/solutions.html): Travel and service-business concepts, with guided demos.
-- [Services](https://aisalesadvisory.com/services.html): Workflow agents, pilots, white-label delivery and connected workflows.
-- [Why us](https://aisalesadvisory.com/about.html): The company's combined capabilities and product principles.
-- [Book a call](https://aisalesadvisory.com/contact.html): Cal.com scheduling for a focused strategy conversation.
-
-## Contact
-
-- Website: https://aisalesadvisory.com
-- Book a strategy call: https://aisalesadvisory.com/contact.html
+- [Solutions](https://aisalesadvisory.com/solutions.html)
+- [Book a guided demo](https://aisalesadvisory.com/contact.html)
