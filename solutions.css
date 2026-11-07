@@ -9,3 +9,29 @@
 @media(max-width:620px){.sol-hero .eyebrow{letter-spacing:.09em;line-height:1.5}.sol-hero h1{overflow-wrap:anywhere}.sol-actions{align-items:flex-start;flex-direction:column;gap:18px}.sol-hero-art{min-height:0}.sol-orbit-label{font-size:8px}.orbit-travel{left:8%}}
 
 .wb-team{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0 0}.wb-team>div{display:flex;flex-direction:column;gap:5px;padding:14px;border-radius:8px;background:#e5f1e8}.wb-team span{font-size:10px;letter-spacing:.1em;color:#487a68;font-weight:700}.wb-team strong{font-size:14px}.wb-team small{font-size:11px;color:#587367}@media(max-width:420px){.wb-team{grid-template-columns:1fr}}
+
+/* Gentle, non-blocking motion: information is visible even without scripts. */
+.sol-quicklinks{grid-template-columns:repeat(3,minmax(0,1fr))}
+.sol-quicklinks a{border-radius:4px;transition:background-color .25s ease,color .25s ease,padding .25s ease}
+.sol-quicklinks a b,.sol-light-link span,.sol-dark-link span{display:inline-block;transition:transform .25s ease}
+.sol-quicklinks a:hover,.sol-quicklinks a:focus-visible{background:rgba(255,255,255,.38);padding-left:30px;color:var(--teal-dark)}
+.sol-quicklinks a:hover b,.sol-quicklinks a:focus-visible b,.sol-light-link:hover span,.sol-light-link:focus-visible span,.sol-dark-link:hover span,.sol-dark-link:focus-visible span{transform:translate(3px,-3px)}
+.sol-travel,.sol-service,.sol-workbench,.sol-intro{scroll-margin-top:20px}
+@media (prefers-reduced-motion:no-preference){
+  .sol-enter{animation:sol-arrive .7s cubic-bezier(.2,.7,.2,1) both}
+  .sol-capabilities>div:nth-child(2),.wb-copy>div:nth-child(2){animation-delay:.08s}
+  .sol-capabilities>div:nth-child(3),.wb-copy>div:nth-child(3){animation-delay:.16s}
+  .sol-hero-orbit{animation:sol-breathe 8s ease-in-out infinite alternate}
+  .orbit-b{animation-delay:-4s}
+  .sol-hero-core{animation:sol-float 7s ease-in-out infinite}
+  .travel-path b{animation:sol-flight 6s ease-in-out infinite alternate}
+  .service-wave i{animation:sol-wave 1.8s ease-in-out infinite alternate;transform-origin:center}
+  .service-wave i:nth-child(3n){animation-delay:-.7s}.service-wave i:nth-child(2n){animation-delay:-1.2s}
+  @keyframes sol-arrive{from{opacity:.7;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes sol-breathe{from{transform:scale(.98);opacity:.65}to{transform:scale(1.02);opacity:1}}
+  @keyframes sol-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  @keyframes sol-flight{from{transform:translateX(-7px)}to{transform:translateX(7px)}}
+  @keyframes sol-wave{from{transform:scaleY(.55);opacity:.65}to{transform:scaleY(1);opacity:1}}
+}
+@media(max-width:620px){.sol-quicklinks{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.sol-quicklinks a,.sol-quicklinks a b,.sol-light-link span,.sol-dark-link span{transition:none}}
