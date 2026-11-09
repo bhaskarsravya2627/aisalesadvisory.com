@@ -15,6 +15,7 @@ We also design and build voice agents for agencies and software firms to offer u
 
 - [What we do](https://aisalesadvisory.com/services.html)
 - [Book a free AI sales review](https://aisalesadvisory.com/contact.html)
+- Email: hello@aisalesadvisory.com (general), sales@aisalesadvisory.com (enquiries), partners@aisalesadvisory.com (agencies)
 - [Examples we've built](https://aisalesadvisory.com/solutions.html): Travel Sales & Care and Service Desk voice agent prototypes.
 - [Why us](https://aisalesadvisory.com/about.html): Sales and operations people who build AI.
 - [AI sales guide](https://aisalesadvisory.com/resources.html): Find where you're losing sales, run a focused pilot and know what to measure.
