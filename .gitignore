@@ -2,8 +2,11 @@
 .DS_Store
 
 # Editor directories
-.vscode/
 .idea/
+.vscode/
 
 # Local env files
 .env
+
+# Netlify CLI
+.netlify

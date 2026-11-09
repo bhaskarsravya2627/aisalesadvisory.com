@@ -5,7 +5,7 @@ document.querySelectorAll('.nav-solutions').forEach(nav=>{
   const toggle=nav.querySelector('.nav-dropdown-toggle');if(!toggle)return;
   const open=()=>{nav.classList.remove('is-dismissed');nav.classList.add('is-open');toggle.setAttribute('aria-expanded','true')};
   const close=()=>{nav.classList.remove('is-open');nav.classList.add('is-dismissed');toggle.setAttribute('aria-expanded','false')};
-  toggle.addEventListener('click',()=>{if(toggle.getAttribute('aria-expanded')==='true')close();else open()});
+  toggle.addEventListener('click',()=>{if(nav.classList.contains('is-open'))close();else open()});
   nav.addEventListener('pointerenter',()=>{nav.classList.remove('is-dismissed');toggle.setAttribute('aria-expanded','true')});
   nav.addEventListener('pointerleave',()=>{if(!nav.contains(document.activeElement)){nav.classList.remove('is-open','is-dismissed');toggle.setAttribute('aria-expanded','false')}});
   nav.addEventListener('focusin',event=>{if(event.target!==toggle&&!nav.classList.contains('is-dismissed'))toggle.setAttribute('aria-expanded','true')});
@@ -31,3 +31,5 @@ if(motionFooter){
   preference.addEventListener?.('change',event=>{paused=event.matches;update()});
   update();motionFooter.appendChild(control);
 }
+
+if(menuButton&&mobileMenu)document.addEventListener('click',e=>{if(mobileMenu.classList.contains('open')&&!mobileMenu.contains(e.target)&&!menuButton.contains(e.target))menuButton.click()});

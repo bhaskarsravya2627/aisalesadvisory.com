@@ -18,3 +18,4 @@ We also design and build voice agents for agencies and software firms to offer u
 - [Examples we've built](https://aisalesadvisory.com/solutions.html): Travel Sales & Care and Service Desk voice agent prototypes.
 - [Why us](https://aisalesadvisory.com/about.html): Sales and operations people who build AI.
 - [AI sales guide](https://aisalesadvisory.com/resources.html): Find where you're losing sales, run a focused pilot and know what to measure.
+- [Privacy notice](https://aisalesadvisory.com/privacy.html): How we use personal data from bookings and analytics.

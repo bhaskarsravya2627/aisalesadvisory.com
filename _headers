@@ -1,19 +1,20 @@
+# Security headers for every page (Netlify _headers format)
 /*
-  # Prevent your site being embedded in iframes (clickjacking protection)
   X-Frame-Options: DENY
-
-  # Stop browsers guessing file types (prevents certain attack vectors)
   X-Content-Type-Options: nosniff
-
-  # Control what referrer info is sent when visitors click links
   Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), browsing-topics=()
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  # Self-hosted fonts, no inline scripts. Allows: Cal.com booking embed, and Google Analytics 4 / Microsoft Clarity (loaded only after consent, see analytics.js)
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://app.cal.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; connect-src 'self' https://app.cal.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com; frame-src https://app.cal.com https://cal.com; manifest-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests
 
-  # Force HTTPS for 1 year — browser won't try HTTP even if typed
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
 
-  # Disable access to camera, mic, location — not needed on this site
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+/*.css
+  Cache-Control: public, max-age=3600, must-revalidate
 
-  # Content Security Policy — controls what external resources the site can load
-  # Allows: Google Fonts, Cal.com embed, Google Apps Script (for contact form)
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://app.cal.com https://cal.com; frame-src https://cal.com https://app.cal.com; img-src 'self' data: https:;
+/*.js
+  Cache-Control: public, max-age=3600, must-revalidate
