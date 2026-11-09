@@ -1,12 +1,20 @@
 # AI Sales Advisory
 
-AI Sales Advisory designs and builds tailored voice AI solutions for travel sales and customer care, service business reception, and other customer-facing workflows. Solutions can connect conversations with business rules, operational processes and relevant systems.
+AI Sales Advisory helps small and medium-sized, owner-led businesses win more sales with AI. We find where a business is losing sales (calls after hours and at weekends, while the owner is on holiday or on a job, questions nobody can answer in time, and quotes nobody follows up) and build custom voice agents to win them back. The people who advise are the people who build.
 
-The Command Centre, currently in build for clients across these solutions, is intended to let teams create and manage multiple AI-powered voice specialists, review conversations and performance by specialist, identify opportunities to improve and bring performance metrics to executive review.
+What we do: Advise · Build · Support.
+- Advise: a free 30-minute AI sales review gives an honest view of where the business is losing sales and a suggested first step. An AI growth plan is a separate, deeper piece of work, scoped and agreed up front.
+- Build: custom voice agents designed around each business (its customers, rules, systems and brand). They answer calls, take enquiries, book appointments, follow up quotes and hand over to a person when they should. Every build starts with a focused pilot on one type of call.
+- Support: once an agent is live, we review its calls and handovers, keep it up to date as prices, services and hours change, fix issues and report on what it does for sales.
 
-- [Solutions](https://aisalesadvisory.com/solutions.html)
-- [Book a strategy call](https://aisalesadvisory.com/contact.html)
+How we work: Free AI sales review → Plan & design → Build & pilot → Support & improve.
 
-- [How we work](https://aisalesadvisory.com/services.html): Focused pilots and partner delivery.
-- [About](https://aisalesadvisory.com/about.html): Product, commercial and operational approach.
-- [Voice AI field guide](https://aisalesadvisory.com/resources.html): Workflow fit, rollout readiness and partnership questions.
+Examples we've built: two working prototypes, a Travel Sales & Care agent for travel sellers and a Service Desk agent for appointment-led service businesses. They show the approach rather than products for sale; each client's agent is built for their own problem. A Command Centre for overseeing agents is in build.
+
+We also design and build voice agents for agencies and software firms to offer under their own brand.
+
+- [What we do](https://aisalesadvisory.com/services.html)
+- [Book a free AI sales review](https://aisalesadvisory.com/contact.html)
+- [Examples we've built](https://aisalesadvisory.com/solutions.html): Travel Sales & Care and Service Desk voice agent prototypes.
+- [Why us](https://aisalesadvisory.com/about.html): Sales and operations people who build AI.
+- [AI sales guide](https://aisalesadvisory.com/resources.html): Find where you're losing sales, run a focused pilot and know what to measure.
