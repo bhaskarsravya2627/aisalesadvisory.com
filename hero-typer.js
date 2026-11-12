@@ -11,7 +11,7 @@
   var phrases=Array.prototype.map.call(wrap.querySelectorAll('.typed-ghost'),function(el){var t=el.textContent;return t.indexOf(PREFIX)===0?t.slice(PREFIX.length):t});
   if(phrases.length<2)return;
   var root=document.documentElement,reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
-  if(reduce.matches)return;
+  if(reduce.matches){var l=phrases[phrases.length-1];typed.textContent=l;rest.textContent='';return}
   var TYPE=50,JITTER=15,COMMA=120,HOLD=2200,FIRST_HOLD=3500,GAP=350,DELETE_MAX=700;
   var last=phrases.length-1,i=0,pos=phrases[0].length,deleting=true,timer=null,visible=true,done=false,started=false;
   function paused(){var saved=false;try{saved=sessionStorage.getItem('motionPaused')==='true'}catch(e){}return root.classList.contains('motion-paused')||saved}

@@ -132,9 +132,8 @@ body{font-variant-emoji:text}.ico{display:inline-block;width:1em;height:1em;vert
 @media(prefers-reduced-motion:reduce){.typed-wrap .typed{background:none}}
 .motion-paused .typed-wrap .typed{background:none}
 .hero-cta{display:flex;flex-direction:column;gap:10px}.cta-note{margin:0;font-size:13px;color:var(--muted)}
-@media(prefers-reduced-motion:reduce){.typed-live:after{display:none}}
-.motion-paused .typed-live:after{display:none}
-@media(max-width:620px){.hero h1.typed-h1{font-size:44px}.hero .hero-lede{font-size:17px;line-height:1.6}.hero .hero-solution-links,.hero .trust-row{display:none}.hero-actions{margin-bottom:8px}}
+@media(prefers-reduced-motion:reduce){}
+.motion-paused @media(max-width:620px){.hero h1.typed-h1{font-size:44px}.hero .hero-lede{font-size:17px;line-height:1.6}.hero .hero-solution-links,.hero .trust-row{display:none}.hero-actions{margin-bottom:8px}}
 /* Why voice AI, why now */
 .why-section{padding-bottom:96px}
 .why-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px}
@@ -143,7 +142,7 @@ body{font-variant-emoji:text}.ico{display:inline-block;width:1em;height:1em;vert
 .why-figure{display:block;font:550 clamp(60px,6.4vw,92px)/1 var(--display);letter-spacing:-.06em;color:var(--ink);margin:22px 0 16px}
 .why-card>p:not(.why-source){font-size:15px;line-height:1.6;color:#435555;margin:0 0 22px}
 .why-source{margin:auto 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:12px;line-height:1.55;color:var(--muted)}
-.why-source a,.why-honest p a{display:inline-block;padding:6px 0;font-weight:700;color:var(--teal-dark);border-bottom:1px solid currentColor;line-height:1.2}
+.why-source a,.why-honest p a{display:inline-block;padding:10px 0;font-weight:700;color:var(--teal-dark);border-bottom:1px solid currentColor;line-height:1.2}
 .why-lead{background:var(--ink);border-color:var(--ink);color:#fff}
 .why-lead .why-kicker{color:#94dfcc}.why-lead .why-figure{color:#fff;font-size:clamp(76px,8vw,120px)}
 .why-lead>p:not(.why-source){color:#c7d6d4;font-size:17px}
@@ -155,3 +154,5 @@ body{font-variant-emoji:text}.ico{display:inline-block;width:1em;height:1em;vert
 @media(max-width:370px){.hero h1.typed-h1{font-size:40px}}
 @media(max-width:900px){.why-section .section-heading{gap:16px;margin-bottom:36px}}
 /* Contrast fixes (WCAG AA) */.edge-card p{color:#eaf6f3}.edge-stats span{color:#eaf6f3}footer .brand em{color:#5cc0b1}
+.header-cta{white-space:nowrap}@media(max-width:360px){.header-cta{gap:0;font-size:12.5px}.header-cta>span[aria-hidden]{display:none}.menu-toggle{margin-left:6px}}
+@media(max-width:360px){.site-header .brand{margin-right:8px;min-width:0}}
