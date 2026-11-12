@@ -123,7 +123,7 @@ body{font-variant-emoji:text}.ico{display:inline-block;width:1em;height:1em;vert
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .typed-wrap{display:grid}
 .typed-wrap>span{grid-area:1/1;color:var(--ink);font-weight:600}
-.typed-ghost{visibility:hidden}
+.typed-wrap>.typed-ghost{display:block!important;visibility:hidden}
 .typed-wrap .typed{color:var(--teal);font-weight:500;padding-right:.1em;margin-right:-.1em;background:linear-gradient(var(--teal),var(--teal)) no-repeat right 55%/.06em .8em}
 .typed-wrap .typed-rest{color:transparent;font-weight:500}
 .typed-wrap.is-holding .typed{animation:typed-caret 1.06s steps(1) infinite}
