@@ -124,7 +124,7 @@
       var a = e.target.closest('a[href]');
       if (!a) return;
       var href = a.getAttribute('href') || '';
-      var text = (a.textContent || '').replace(/[↗↓→]/g, '').replace(/\s+/g, ' ').trim().slice(0, 80);
+      var text = (a.textContent || '').replace(/[↗︎↓→]/g, '').replace(/\s+/g, ' ').trim().slice(0, 80);
       if (/contact\.html/.test(href)) {
         window.asaTrack('cta_click', { cta_text: text, cta_location: sectionOf(a) });
       } else if (/cal\.com/.test(href)) {
