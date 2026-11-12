@@ -132,8 +132,7 @@ body{font-variant-emoji:text}.ico{display:inline-block;width:1em;height:1em;vert
 @media(prefers-reduced-motion:reduce){.typed-wrap .typed{background:none}}
 .motion-paused .typed-wrap .typed{background:none}
 .hero-cta{display:flex;flex-direction:column;gap:10px}.cta-note{margin:0;font-size:13px;color:var(--muted)}
-@media(prefers-reduced-motion:reduce){}
-.motion-paused @media(max-width:620px){.hero h1.typed-h1{font-size:44px}.hero .hero-lede{font-size:17px;line-height:1.6}.hero .hero-solution-links,.hero .trust-row{display:none}.hero-actions{margin-bottom:8px}}
+@media(max-width:620px){.hero h1.typed-h1{font-size:44px}.hero .hero-lede{font-size:17px;line-height:1.6}.hero .hero-solution-links,.hero .trust-row{display:none}.hero-actions{margin-bottom:8px}}
 /* Why voice AI, why now */
 .why-section{padding-bottom:96px}
 .why-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px}
