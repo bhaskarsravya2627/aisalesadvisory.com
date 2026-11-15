@@ -155,3 +155,4 @@ body{font-variant-emoji:text}.ico{display:inline-block;width:1em;height:1em;vert
 /* Contrast fixes (WCAG AA) */.edge-card p{color:#eaf6f3}.edge-stats span{color:#eaf6f3}footer .brand em{color:#5cc0b1}
 .header-cta{white-space:nowrap}@media(max-width:360px){.header-cta{gap:0;font-size:12.5px}.header-cta>span[aria-hidden]{display:none}.menu-toggle{margin-left:6px}}
 @media(max-width:360px){.site-header .brand{margin-right:8px;min-width:0}}
+.hero+.why-section{border-top:1px solid var(--line);padding-top:100px}

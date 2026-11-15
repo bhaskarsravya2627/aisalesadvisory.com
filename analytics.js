@@ -149,7 +149,7 @@
       try {
         window.Cal('on', { action: 'linkReady', callback: function () { window.asaTrack('booking_calendar_view'); } });
         window.Cal('on', { action: 'eventTypeSelected', callback: function () { window.asaTrack('booking_started'); } });
-        window.Cal('on', { action: 'bookingSuccessfulV2', callback: function () { window.asaTrack('generate_lead', { method: 'cal_com', lead_type: 'free_ai_sales_review' }); } });
+        window.Cal('on', { action: 'bookingSuccessfulV2', callback: function () { window.asaTrack('generate_lead', { method: 'cal_com', lead_type: 'free_ai_growth_call' }); } });
       } catch (e) {}
     }
   }
