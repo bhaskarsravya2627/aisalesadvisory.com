@@ -4,15 +4,15 @@
 
 ## Who it's for
 
-Owner-led small and medium-sized businesses in any sector, especially where enquiries arrive by phone and a missed call, a slow reply or an unchased quote means a lost sale. Typical problems: calls after hours, at weekends or while the owner is on a job or on holiday; questions nobody can answer in time; quotes nobody follows up; admin that eats into selling time. We work with businesses across the United Kingdom, online.
+Owner-led small and medium-sized businesses, especially where enquiries arrive by phone and a missed call, a slow reply or an unchased quote means a lost sale. Typical problems: calls after hours, at weekends or while the owner is on a job or on holiday; questions nobody can answer in time; quotes nobody follows up; admin that eats into selling time. We work with businesses across the United Kingdom, online.
 
 ## What we do: Advise · Build · Support
 
-- Advise: a free 30-minute AI growth call gives an honest view of where the business is losing sales and a suggested first step, even if that step isn't AI. An AI growth plan is a separate, deeper piece of work, scoped and priced up front.
+- Advise: a free 30-minute sales check-up gives an honest view of where the business is losing sales and a suggested first step, even if that step isn't AI. An AI growth plan is a separate, deeper piece of work, scoped and priced up front.
 - Build: custom voice agents designed around each business (its customers, rules, systems and brand). They answer calls, take enquiries, book appointments, follow up quotes and hand over to a person when they should. Every build starts with a focused pilot on one type of call, measured against what happens today.
 - Support: once an agent is live, we review its calls and handovers, keep it up to date as prices, services and hours change, fix issues and report on what it does for sales.
 
-How we work: Free AI growth call → Plan & design → Build & pilot → Support & improve.
+How we work: Free sales check-up → Plan & design → Build & pilot → Support & improve.
 
 We also design and build voice agents for agencies and software firms to offer under their own brand.
 
@@ -26,7 +26,7 @@ We also design and build voice agents for agencies and software firms to offer u
 
 ## Pages
 
-- [Book a free AI growth call](https://aisalesadvisory.com/contact.html): 30 minutes, free, you leave with a suggested first step.
+- [Book a free sales check-up](https://aisalesadvisory.com/contact.html): 30 minutes, free, you leave with a suggested first step.
 - [What we do](https://aisalesadvisory.com/services.html): Advise, Build and Support in detail.
 - [Examples we've built](https://aisalesadvisory.com/solutions.html): two working prototypes, a Travel Sales & Care agent for travel sellers and a Service Desk agent for appointment-led service businesses. They show the approach, not products for sale. A Command Centre for overseeing agents is in build.
 - [Why us](https://aisalesadvisory.com/about.html): sales and operations people who build AI.
