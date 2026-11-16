@@ -5,7 +5,7 @@
      Clarity: clarity.microsoft.com > Settings > Overview > Project ID (looks like abcd1234ef)
    While both are empty, no banner is shown and nothing is tracked. */
 (function () {
-  var CONFIG = { ga4: 'G-Q4FV912GL2', clarity: '' };
+  var CONFIG = { ga4: 'G-385TNCP80P', clarity: '' };
 
   var KEY = 'asa-consent-v1';
   var enabled = !!(CONFIG.ga4 || CONFIG.clarity);
